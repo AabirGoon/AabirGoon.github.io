@@ -2,37 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Aabir Goon — Author & Fiction Writer</title>
 
-  <meta name="description" content="Official website of Aabir Goon, a Bengali and English fiction writer exploring psychological fiction, horror, mystery, fantasy and thriller stories.">
+  <meta name="description" content="Official website of Aabir Goon, a Bengali and English fiction writer from Alipurduar, West Bengal, exploring psychological fiction, horror, mystery, fantasy and thriller stories.">
 
   <meta name="author" content="Aabir Goon">
+  <meta name="robots" content="index, follow, max-image-preview:large">
 
-  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f4f1eb">
 
   <link rel="canonical" href="https://aabirgoon.github.io/">
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Aabir Goon">
   <meta property="og:title" content="Aabir Goon — Author & Fiction Writer">
-  <meta property="og:description" content="Official website of Aabir Goon, fiction writer and storyteller.">
+  <meta property="og:description" content="Official website of Aabir Goon, a Bengali and English fiction writer exploring psychological fiction, horror, mystery, fantasy and thriller stories.">
   <meta property="og:url" content="https://aabirgoon.github.io/">
+  <meta property="og:image" content="https://aabirgoon.github.io/aabir-goon.jpg">
+  <meta property="og:image:alt" content="Portrait of Aabir Goon, Author and Fiction Writer">
 
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Aabir Goon — Author & Fiction Writer">
-  <meta name="twitter:description" content="Official website of Aabir Goon, fiction writer and storyteller.">
+  <meta name="twitter:description" content="Official website of Aabir Goon, a Bengali and English fiction writer exploring psychological fiction, horror, mystery, fantasy and thriller stories.">
+  <meta name="twitter:image" content="https://aabirgoon.github.io/aabir-goon.jpg">
+  <meta name="twitter:image:alt" content="Portrait of Aabir Goon, Author and Fiction Writer">
 
+  <!-- Person Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://aabirgoon.github.io/#aabir-goon",
     "name": "Aabir Goon",
     "alternateName": "Manush",
     "url": "https://aabirgoon.github.io/",
+    "image": "https://aabirgoon.github.io/aabir-goon.jpg",
     "jobTitle": "Author and Fiction Writer",
-    "description": "A Bengali and English fiction writer exploring psychological fiction, horror, mystery, fantasy and thriller stories.",
+    "description": "A Bengali and English fiction writer from Alipurduar, West Bengal, exploring psychological fiction, horror, mystery, fantasy and thriller stories.",
+    "email": "techaabir@gmail.com",
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Alipurduar, West Bengal, India"
+    },
     "sameAs": [
       "https://youtube.com/@manushdergolpo",
       "https://www.instagram.com/aabir.goon/",
@@ -42,6 +57,7 @@
   </script>
 
   <style>
+
     :root {
       --bg: #f4f1eb;
       --text: #171715;
@@ -166,6 +182,7 @@
 
     .portrait {
       width: 100%;
+      height: auto;
       aspect-ratio: 4 / 5;
       object-fit: cover;
       object-position: center top;
@@ -187,11 +204,12 @@
       margin-bottom: 15px;
     }
 
-    h3 {
-      font-family: Georgia, serif;
+    .section-heading {
+      font-family: Georgia, "Times New Roman", serif;
       font-size: clamp(38px, 5vw, 58px);
       line-height: 1;
       margin-bottom: 35px;
+      font-weight: normal;
     }
 
     .about-grid {
@@ -232,11 +250,12 @@
       letter-spacing: 2px;
     }
 
-    .book h4 {
+    .book h3 {
       font-family: Georgia, serif;
       font-size: 28px;
       line-height: 1.15;
       margin: 20px 0 10px;
+      font-weight: normal;
     }
 
     .book p {
@@ -249,6 +268,7 @@
       font-size: 13px;
       font-weight: bold;
       text-decoration: underline;
+      text-underline-offset: 4px;
     }
 
     .audio {
@@ -349,6 +369,7 @@
         font-size: 20px;
       }
     }
+
   </style>
 </head>
 
@@ -356,7 +377,8 @@
 
   <div class="container">
 
-    <nav>
+    <nav aria-label="Main navigation">
+
       <div class="logo">AABIR GOON</div>
 
       <div class="links">
@@ -365,7 +387,9 @@
         <a href="#audio">Audio Stories</a>
         <a href="#connect">Contact</a>
       </div>
+
     </nav>
+
 
     <main>
 
@@ -373,11 +397,14 @@
       <section class="hero" style="border-top:0;">
 
         <div>
+
           <div class="eyebrow">Author · Fiction Writer</div>
 
           <h1>Aabir<br>Goon.</h1>
 
-          <h2>Stories from the psychological, mysterious and unsettling sides of being human.</h2>
+          <h2>
+            Stories from the psychological, mysterious and unsettling sides of being human.
+          </h2>
 
           <p>
             Aabir Goon is a fiction writer who primarily writes in Bengali and English,
@@ -385,17 +412,32 @@
           </p>
 
           <div class="buttons">
-            <a class="button primary" href="#books">Explore the books</a>
-            <a class="button" href="#about">About Aabir</a>
+
+            <a class="button primary" href="#books">
+              Explore the books
+            </a>
+
+            <a class="button" href="#about">
+              About Aabir
+            </a>
+
           </div>
+
         </div>
 
+
         <div>
+
           <img
             class="portrait"
             src="aabir-goon.jpg"
-            alt="Aabir Goon, Bengali and English fiction writer"
-            loading="eager">
+            alt="Portrait of Aabir Goon, Bengali and English fiction writer"
+            width="800"
+            height="1000"
+            loading="eager"
+            fetchpriority="high"
+          >
+
         </div>
 
       </section>
@@ -409,10 +451,16 @@
         <div class="about-grid">
 
           <div>
-            <h3>The<br>writer.</h3>
+
+            <h2 class="section-heading">
+              The<br>writer.
+            </h2>
+
           </div>
 
+
           <div>
+
             <p class="about-text">
               Aabir Goon is a fiction writer who primarily writes in Bengali and English,
               with a particular interest in psychological fiction, horror, mystery,
@@ -432,11 +480,13 @@
             </p>
 
             <p class="about-small">
-              Based in Alipurduar, West Bengal.
+              Based in Alipurduar, West Bengal, India.
             </p>
+
           </div>
 
         </div>
+
       </section>
 
 
@@ -445,119 +495,225 @@
 
         <div class="section-label">02 — Selected Books</div>
 
-        <h3>Published<br>work.</h3>
+        <h2 class="section-heading">
+          Published<br>work.
+        </h2>
+
 
         <div class="books">
 
+
           <article class="book">
+
             <div>
-              <div class="book-number">01 · 2026</div>
-              <h4>Zero Balance</h4>
-              <p>English · Amazon KDP</p>
+
+              <div class="book-number">
+                01 · 2026
+              </div>
+
+              <h3>
+                Zero Balance
+              </h3>
+
+              <p>
+                English · Amazon KDP
+              </p>
+
             </div>
-            <a class="book-link"
-               href="https://amzn.in/d/05g9okOJ"
-               target="_blank"
-               rel="noopener">
+
+            <a
+              class="book-link"
+              href="https://amzn.in/d/05g9okOJ"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Zero Balance by Aabir Goon on Amazon"
+            >
               View on Amazon →
             </a>
+
           </article>
 
 
           <article class="book">
+
             <div>
-              <div class="book-number">02 · 2026</div>
-              <h4>There Should Be Peace</h4>
-              <p>English · Amazon KDP</p>
+
+              <div class="book-number">
+                02 · 2026
+              </div>
+
+              <h3>
+                There Should Be Peace
+              </h3>
+
+              <p>
+                English · Amazon KDP
+              </p>
+
             </div>
-            <a class="book-link"
-               href="https://amzn.in/d/0fePBHmR"
-               target="_blank"
-               rel="noopener">
+
+            <a
+              class="book-link"
+              href="https://amzn.in/d/0fePBHmR"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View There Should Be Peace by Aabir Goon on Amazon"
+            >
               View on Amazon →
             </a>
+
           </article>
 
 
           <article class="book">
+
             <div>
-              <div class="book-number">03 · 2026</div>
-              <h4>Adulting Is a Scam: And How to Win It Anyway</h4>
-              <p>English · Amazon KDP</p>
+
+              <div class="book-number">
+                03 · 2026
+              </div>
+
+              <h3>
+                Adulting Is a Scam: And How to Win It Anyway
+              </h3>
+
+              <p>
+                English · Amazon KDP
+              </p>
+
             </div>
-            <a class="book-link"
-               href="https://amzn.in/d/047CKD7m"
-               target="_blank"
-               rel="noopener">
+
+            <a
+              class="book-link"
+              href="https://amzn.in/d/047CKD7m"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Adulting Is a Scam by Aabir Goon on Amazon"
+            >
               View on Amazon →
             </a>
+
           </article>
 
 
           <article class="book">
+
             <div>
-              <div class="book-number">04 · 2026</div>
-              <h4>Oros</h4>
-              <p>English · Amazon KDP</p>
+
+              <div class="book-number">
+                04 · 2026
+              </div>
+
+              <h3>
+                Oros
+              </h3>
+
+              <p>
+                English · Amazon KDP
+              </p>
+
             </div>
-            <a class="book-link"
-               href="https://amzn.in/d/0aucmFAfO"
-               target="_blank"
-               rel="noopener">
+
+            <a
+              class="book-link"
+              href="https://amzn.in/d/0aucmFAfO"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Oros by Aabir Goon on Amazon"
+            >
               View on Amazon →
             </a>
+
           </article>
 
 
           <article class="book">
+
             <div>
-              <div class="book-number">05 · 2026</div>
-              <h4>Scriptophobia</h4>
-              <p>English · Amazon KDP</p>
+
+              <div class="book-number">
+                05 · 2026
+              </div>
+
+              <h3>
+                Scriptophobia
+              </h3>
+
+              <p>
+                English · Amazon KDP
+              </p>
+
             </div>
-            <a class="book-link"
-               href="https://amzn.in/d/01KPVAou"
-               target="_blank"
-               rel="noopener">
+
+            <a
+              class="book-link"
+              href="https://amzn.in/d/01KPVAou"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Scriptophobia by Aabir Goon on Amazon"
+            >
               View on Amazon →
             </a>
+
           </article>
 
 
           <article class="book">
+
             <div>
-              <div class="book-number">06 · 2026</div>
-              <h4>A Silent Junction</h4>
-              <p>English · Amazon KDP · Currently unavailable</p>
+
+              <div class="book-number">
+                06 · 2026
+              </div>
+
+              <h3>
+                A Silent Junction
+              </h3>
+
+              <p>
+                English · Amazon KDP · Currently unavailable
+              </p>
+
             </div>
+
           </article>
+
 
         </div>
 
       </section>
 
 
-      <!-- OTHER FICTION -->
-      <section>
+      <!-- OTHER STORIES -->
+      <section id="stories">
 
-        <div class="section-label">03 — Beyond the Books</div>
+        <div class="section-label">
+          03 — Beyond the Books
+        </div>
 
         <div class="about-grid">
 
           <div>
-            <h3>Other<br>stories.</h3>
+
+            <h2 class="section-heading">
+              Other<br>stories.
+            </h2>
+
           </div>
 
+
           <div>
+
             <p class="about-text">
-              Beyond his published books, Aabir has written numerous stories
+              Beyond his published books, Aabir has written stories
               across Bengali, English and Hindi.
             </p>
 
             <p class="about-small">
-              His unpublished and independent writing explores psychological,
+              His independent writing explores psychological,
               horror, mystery, fantasy and thriller themes.
             </p>
+
           </div>
 
         </div>
@@ -568,9 +724,13 @@
       <!-- AUDIO STORIES -->
       <section id="audio" class="audio">
 
-        <div class="section-label">04 — Bengali Audio Stories</div>
+        <div class="section-label">
+          04 — Bengali Audio Stories
+        </div>
 
-        <h3>Manushder<br>Golpo.</h3>
+        <h2 class="section-heading">
+          Manushder<br>Golpo.
+        </h2>
 
         <p>
           Bengali stories, atmosphere and narration.
@@ -578,13 +738,17 @@
         </p>
 
         <div class="buttons">
+
           <a
             class="button primary"
             href="https://youtube.com/@manushdergolpo"
             target="_blank"
-            rel="noopener">
+            rel="noopener noreferrer"
+            aria-label="Listen to Manushder Golpo on YouTube"
+          >
             Listen on YouTube →
           </a>
+
         </div>
 
       </section>
@@ -593,40 +757,58 @@
       <!-- CONNECT -->
       <section id="connect">
 
-        <div class="section-label">05 — Connect</div>
+        <div class="section-label">
+          05 — Connect
+        </div>
 
         <div class="connect-grid">
 
+
           <div>
-            <h3>Say<br>hello.</h3>
+
+            <h2 class="section-heading">
+              Say<br>hello.
+            </h2>
 
             <a
               class="contact-email"
-              href="mailto:techaabir@gmail.com">
+              href="mailto:techaabir@gmail.com"
+              aria-label="Email Aabir Goon"
+            >
               techaabir@gmail.com
             </a>
+
           </div>
+
 
           <div class="socials">
 
             <a
               href="https://youtube.com/@manushdergolpo"
               target="_blank"
-              rel="noopener">
+              rel="noopener noreferrer"
+              aria-label="Aabir Goon on YouTube"
+            >
               YouTube ↗
             </a>
+
 
             <a
               href="https://www.instagram.com/aabir.goon/"
               target="_blank"
-              rel="noopener">
+              rel="noopener noreferrer"
+              aria-label="Aabir Goon on Instagram"
+            >
               Instagram ↗
             </a>
+
 
             <a
               href="https://www.facebook.com/share/1GK5wFMWMz/"
               target="_blank"
-              rel="noopener">
+              rel="noopener noreferrer"
+              aria-label="Aabir Goon on Facebook"
+            >
               Facebook ↗
             </a>
 
