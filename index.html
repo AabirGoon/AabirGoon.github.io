@@ -2,43 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Aabir Goon — Author & Fiction Writer</title>
 
-  <meta name="description" content="Official website of Aabir Goon, a Bengali and English fiction writer from Alipurduar, West Bengal, exploring psychological fiction, horror, mystery, fantasy and thriller stories.">
+  <meta name="description"
+        content="Official website of Aabir Goon, a Bengali and English fiction writer exploring psychological fiction, horror, mystery, fantasy and thriller stories.">
 
   <meta name="author" content="Aabir Goon">
   <meta name="robots" content="index, follow, max-image-preview:large">
 
-  <meta name="theme-color" content="#f4f1eb">
-
   <link rel="canonical" href="https://aabirgoon.github.io/">
+
+  <meta name="theme-color" content="#0d0d0d">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Aabir Goon">
   <meta property="og:title" content="Aabir Goon — Author & Fiction Writer">
-  <meta property="og:description" content="Official website of Aabir Goon, a Bengali and English fiction writer exploring psychological fiction, horror, mystery, fantasy and thriller stories.">
+  <meta property="og:description"
+        content="Official website of Aabir Goon, a Bengali and English fiction writer exploring psychological fiction, horror, mystery, fantasy and thriller stories.">
   <meta property="og:url" content="https://aabirgoon.github.io/">
+  <meta property="og:site_name" content="Aabir Goon">
   <meta property="og:image" content="https://aabirgoon.github.io/aabir-goon.jpg">
-  <meta property="og:image:alt" content="Portrait of Aabir Goon, Author and Fiction Writer">
+  <meta property="og:image:alt" content="Aabir Goon — Author & Fiction Writer">
 
-  <!-- Twitter / X -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Aabir Goon — Author & Fiction Writer">
-  <meta name="twitter:description" content="Official website of Aabir Goon, a Bengali and English fiction writer exploring psychological fiction, horror, mystery, fantasy and thriller stories.">
+  <meta name="twitter:description"
+        content="Official website of Aabir Goon, a Bengali and English fiction writer exploring psychological fiction, horror, mystery, fantasy and thriller stories.">
   <meta name="twitter:image" content="https://aabirgoon.github.io/aabir-goon.jpg">
-  <meta name="twitter:image:alt" content="Portrait of Aabir Goon, Author and Fiction Writer">
+  <meta name="twitter:image:alt" content="Aabir Goon — Author & Fiction Writer">
 
-  <!-- Person Structured Data -->
+  <!-- Person structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://aabirgoon.github.io/#aabir-goon",
     "name": "Aabir Goon",
-    "alternateName": "Manush",
     "url": "https://aabirgoon.github.io/",
     "image": "https://aabirgoon.github.io/aabir-goon.jpg",
     "jobTitle": "Author and Fiction Writer",
@@ -49,7 +52,6 @@
       "name": "Alipurduar, West Bengal, India"
     },
     "sameAs": [
-      "https://youtube.com/@manushdergolpo",
       "https://www.instagram.com/aabir.goon/",
       "https://www.facebook.com/share/1GK5wFMWMz/"
     ]
@@ -57,17 +59,6 @@
   </script>
 
   <style>
-
-    :root {
-      --bg: #f4f1eb;
-      --text: #171715;
-      --muted: #68655e;
-      --line: #d8d3c9;
-      --card: #ebe7df;
-      --accent: #8b5e3c;
-      --white: #fffdf9;
-    }
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -79,9 +70,9 @@
     }
 
     body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: Arial, Helvetica, sans-serif;
+      background: #0d0d0d;
+      color: #f2eee8;
+      font-family: Georgia, "Times New Roman", serif;
       line-height: 1.7;
     }
 
@@ -90,435 +81,518 @@
       text-decoration: none;
     }
 
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
     .container {
       width: min(1100px, 90%);
       margin: auto;
     }
 
+    /* NAVIGATION */
+
     nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(13, 13, 13, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #292929;
+    }
+
+    .nav-inner {
+      min-height: 70px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 25px 0;
-      border-bottom: 1px solid var(--line);
+      justify-content: space-between;
+      gap: 20px;
     }
 
     .logo {
-      font-family: Georgia, serif;
-      font-size: 22px;
-      font-weight: bold;
-      letter-spacing: 1px;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 2px;
     }
 
-    nav a {
-      margin-left: 20px;
-      color: var(--muted);
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      font-family: Arial, sans-serif;
       font-size: 14px;
     }
+
+    .nav-links a {
+      color: #bdb7ae;
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    /* HERO */
 
     .hero {
       min-height: 88vh;
       display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 60px;
+      grid-template-columns: 1.15fr 0.85fr;
       align-items: center;
-      padding: 70px 0;
+      gap: 70px;
+      padding: 90px 0;
     }
 
     .eyebrow {
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 3px;
+      font-family: Arial, sans-serif;
       font-size: 12px;
-      font-weight: bold;
-      margin-bottom: 18px;
+      letter-spacing: 3px;
+      color: #a99d8d;
+      margin-bottom: 22px;
     }
 
-    h1 {
+    .hero h1 {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(54px, 8vw, 96px);
-      line-height: .95;
+      font-size: clamp(58px, 9vw, 110px);
+      line-height: 0.95;
+      font-weight: 400;
       letter-spacing: -4px;
-      margin-bottom: 25px;
+      margin-bottom: 28px;
     }
 
     .hero h2 {
-      font-family: Georgia, serif;
-      font-size: 25px;
-      font-weight: normal;
-      color: var(--muted);
+      max-width: 650px;
+      font-size: clamp(22px, 3vw, 34px);
+      line-height: 1.25;
+      font-weight: 400;
+      color: #ddd5ca;
       margin-bottom: 25px;
     }
 
     .hero p {
-      max-width: 570px;
-      color: var(--muted);
+      max-width: 650px;
+      color: #aaa39b;
       font-size: 17px;
+      margin-bottom: 32px;
     }
 
-    .buttons {
-      margin-top: 35px;
+    .hero-buttons {
       display: flex;
-      gap: 12px;
       flex-wrap: wrap;
+      gap: 14px;
     }
 
     .button {
       display: inline-block;
-      padding: 12px 20px;
-      border: 1px solid var(--text);
-      font-size: 14px;
-      transition: .2s;
+      padding: 13px 20px;
+      border: 1px solid #56514b;
+      border-radius: 4px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      transition: 0.25s ease;
     }
 
     .button.primary {
-      background: var(--text);
-      color: var(--white);
+      background: #f2eee8;
+      color: #0d0d0d;
+      border-color: #f2eee8;
     }
 
     .button:hover {
       transform: translateY(-2px);
+      opacity: 0.85;
+    }
+
+    .portrait-wrap {
+      position: relative;
+    }
+
+    .portrait-wrap::before {
+      content: "";
+      position: absolute;
+      inset: -18px 18px 18px -18px;
+      border: 1px solid #3b3834;
+      z-index: -1;
     }
 
     .portrait {
       width: 100%;
-      height: auto;
       aspect-ratio: 4 / 5;
       object-fit: cover;
-      object-position: center top;
-      filter: saturate(.9);
-      display: block;
+      filter: saturate(0.85);
     }
+
+    /* SECTIONS */
 
     section {
-      padding: 110px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    .section-label {
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 11px;
-      font-weight: bold;
-      margin-bottom: 15px;
+      padding: 100px 0;
+      border-top: 1px solid #242424;
     }
 
     .section-heading {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(38px, 5vw, 58px);
-      line-height: 1;
-      margin-bottom: 35px;
-      font-weight: normal;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #a99d8d;
+      margin-bottom: 45px;
     }
 
     .about-grid {
       display: grid;
-      grid-template-columns: .7fr 1.3fr;
+      grid-template-columns: 0.8fr 1.2fr;
       gap: 70px;
     }
 
+    .about-title {
+      font-size: clamp(38px, 6vw, 65px);
+      font-weight: 400;
+      line-height: 1;
+    }
+
     .about-text {
-      font-family: Georgia, serif;
-      font-size: 22px;
-      line-height: 1.6;
+      color: #b8b1a8;
+      font-size: 17px;
     }
 
-    .about-small {
-      color: var(--muted);
-      margin-top: 25px;
+    .about-text p + p {
+      margin-top: 20px;
     }
 
-    .books {
+    /* BOOKS */
+
+    .books-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 
-    .book {
-      background: var(--card);
-      padding: 30px;
-      min-height: 220px;
+    .book-card {
+      min-height: 230px;
+      padding: 28px;
+      border: 1px solid #2e2e2e;
+      background: #121212;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      transition: 0.25s ease;
+    }
+
+    .book-card:hover {
+      transform: translateY(-4px);
+      border-color: #5a554e;
     }
 
     .book-number {
-      color: var(--accent);
-      font-size: 12px;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      color: #77716a;
       letter-spacing: 2px;
     }
 
-    .book h3 {
-      font-family: Georgia, serif;
-      font-size: 28px;
-      line-height: 1.15;
-      margin: 20px 0 10px;
-      font-weight: normal;
+    .book-card h3 {
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 20px 0 12px;
     }
 
-    .book p {
-      color: var(--muted);
-      font-size: 14px;
+    .book-meta {
+      color: #8e8880;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      margin-bottom: 18px;
     }
 
     .book-link {
-      margin-top: 25px;
-      font-size: 13px;
-      font-weight: bold;
-      text-decoration: underline;
-      text-underline-offset: 4px;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ded8cf;
     }
 
-    .audio {
-      background: #1a1917;
-      color: #f5f1e9;
+    /* STORIES */
+
+    .stories-box {
+      border: 1px solid #2e2e2e;
+      padding: 45px;
+      background: #111111;
     }
 
-    .audio .section-label {
-      color: #c9a27e;
+    .stories-box h3 {
+      font-size: clamp(30px, 5vw, 52px);
+      font-weight: 400;
+      line-height: 1.1;
+      margin-bottom: 20px;
     }
 
-    .audio p {
-      max-width: 650px;
-      color: #c9c5bc;
-      font-size: 18px;
+    .stories-box p {
+      max-width: 720px;
+      color: #aaa39b;
+      font-size: 17px;
     }
 
-    .audio .button {
-      border-color: #f5f1e9;
-    }
-
-    .audio .button.primary {
-      background: #f5f1e9;
-      color: #1a1917;
-    }
+    /* CONNECT */
 
     .connect-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 60px;
+      gap: 25px;
     }
 
-    .contact-email {
-      font-family: Georgia, serif;
-      font-size: clamp(24px, 4vw, 40px);
-      text-decoration: underline;
-      text-decoration-thickness: 1px;
-      text-underline-offset: 6px;
+    .connect-card {
+      padding: 28px;
+      border: 1px solid #2e2e2e;
+      background: #111111;
     }
 
-    .socials {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
+    .connect-card h3 {
+      font-size: 23px;
+      font-weight: 400;
+      margin-bottom: 8px;
     }
 
-    .socials a {
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--line);
+    .connect-card p {
+      color: #918b84;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      margin-bottom: 16px;
     }
+
+    .connect-card a {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #e5dfd6;
+      word-break: break-word;
+    }
+
+    /* FOOTER */
 
     footer {
+      border-top: 1px solid #242424;
       padding: 35px 0;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 13px;
+      color: #716c65;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
     }
 
-    @media (max-width: 750px) {
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-      nav {
-        align-items: flex-start;
+    /* RESPONSIVE */
+
+    @media (max-width: 800px) {
+
+      .nav-inner {
+        min-height: 62px;
       }
 
-      nav .links {
-        display: none;
+      .nav-links {
+        gap: 13px;
+        font-size: 11px;
       }
 
       .hero {
         grid-template-columns: 1fr;
-        gap: 45px;
-        padding: 55px 0 80px;
+        gap: 50px;
+        padding: 70px 0;
       }
 
-      h1 {
-        font-size: 62px;
+      .hero h1 {
+        font-size: clamp(52px, 16vw, 85px);
+        letter-spacing: -3px;
       }
 
-      .portrait {
-        aspect-ratio: 1 / 1.15;
+      .hero h2 {
+        font-size: 25px;
       }
 
-      section {
-        padding: 80px 0;
+      .hero p {
+        font-size: 16px;
       }
 
-      .about-grid,
-      .connect-grid {
+      .portrait-wrap {
+        max-width: 520px;
+      }
+
+      .about-grid {
         grid-template-columns: 1fr;
         gap: 35px;
       }
 
-      .books {
+      .books-grid {
         grid-template-columns: 1fr;
       }
 
-      .about-text {
-        font-size: 20px;
+      .connect-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stories-box {
+        padding: 30px;
+      }
+
+      section {
+        padding: 75px 0;
       }
     }
 
+    @media (max-width: 480px) {
+
+      .logo {
+        font-size: 15px;
+        letter-spacing: 1.5px;
+      }
+
+      .nav-links {
+        gap: 10px;
+        font-size: 10px;
+      }
+
+      .hero {
+        padding: 55px 0;
+      }
+
+      .hero h1 {
+        font-size: 56px;
+      }
+
+      .button {
+        width: 100%;
+        text-align: center;
+      }
+
+      .book-card {
+        min-height: 210px;
+      }
+
+      .stories-box {
+        padding: 25px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="#top" class="logo">AABIR GOON</a>
 
-    <nav aria-label="Main navigation">
-
-      <div class="logo">AABIR GOON</div>
-
-      <div class="links">
+      <div class="nav-links">
         <a href="#about">About</a>
         <a href="#books">Books</a>
-        <a href="#audio">Audio Stories</a>
+        <a href="#stories">Stories</a>
         <a href="#connect">Contact</a>
       </div>
+    </div>
+  </nav>
 
-    </nav>
+  <main id="top">
 
+    <!-- HERO -->
+    <header class="container hero">
 
-    <main>
+      <div>
+        <div class="eyebrow">AUTHOR · FICTION WRITER</div>
 
-      <!-- HERO -->
-      <section class="hero" style="border-top:0;">
+        <h1>Aabir Goon.</h1>
 
-        <div>
+        <h2>
+          Stories from the psychological, mysterious and unsettling sides of being human.
+        </h2>
 
-          <div class="eyebrow">Author · Fiction Writer</div>
+        <p>
+          Aabir Goon is a fiction writer who primarily writes in Bengali and English,
+          exploring psychological fiction, horror, mystery, fantasy and thriller stories.
+        </p>
 
-          <h1>Aabir<br>Goon.</h1>
-
-          <h2>
-            Stories from the psychological, mysterious and unsettling sides of being human.
-          </h2>
-
-          <p>
-            Aabir Goon is a fiction writer who primarily writes in Bengali and English,
-            exploring psychological fiction, horror, mystery, fantasy and thriller stories.
-          </p>
-
-          <div class="buttons">
-
-            <a class="button primary" href="#books">
-              Explore the books
-            </a>
-
-            <a class="button" href="#about">
-              About Aabir
-            </a>
-
-          </div>
-
+        <div class="hero-buttons">
+          <a href="#books" class="button primary">Explore the books</a>
+          <a href="#about" class="button">About Aabir</a>
         </div>
+      </div>
 
+      <div class="portrait-wrap">
+        <img
+          src="aabir-goon.jpg"
+          alt="Aabir Goon — Author and Fiction Writer"
+          class="portrait"
+          width="800"
+          height="1000"
+          fetchpriority="high"
+        >
+      </div>
 
-        <div>
+    </header>
 
-          <img
-            class="portrait"
-            src="aabir-goon.jpg"
-            alt="Portrait of Aabir Goon, Bengali and English fiction writer"
-            width="800"
-            height="1000"
-            loading="eager"
-            fetchpriority="high"
-          >
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
 
-        </div>
-
-      </section>
-
-
-      <!-- ABOUT -->
-      <section id="about">
-
-        <div class="section-label">01 — About</div>
+        <div class="section-heading">About the author</div>
 
         <div class="about-grid">
 
-          <div>
+          <h2 class="about-title">
+            Fiction, curiosity<br>
+            &amp; the human mind.
+          </h2>
 
-            <h2 class="section-heading">
-              The<br>writer.
-            </h2>
+          <div class="about-text">
 
-          </div>
-
-
-          <div>
-
-            <p class="about-text">
-              Aabir Goon is a fiction writer who primarily writes in Bengali and English,
-              with a particular interest in psychological fiction, horror, mystery,
-              fantasy and thriller.
+            <p>
+              Aabir Goon is a Bengali and English fiction writer based in
+              Alipurduar, West Bengal, India.
             </p>
 
-            <p class="about-small">
-              Writing under the pen name <em>Manush</em>, he has explored stories
-              that move between the familiar and the unsettling—often focusing on
-              human nature, perception, fear and the questions hidden beneath ordinary life.
+            <p>
+              His writing moves across psychological fiction, horror, mystery,
+              fantasy and thriller, often focusing on unusual situations,
+              uncertainty and the stranger sides of human experience.
             </p>
 
-            <p class="about-small">
-              His work includes independently published books through Amazon Kindle
-              Direct Publishing, as well as Bengali storytelling through the
-              Manushder Golpo audio-storytelling channel.
+            <p>
+              His books have been published through Amazon KDP, with works
+              including <em>Zero Balance</em>, <em>There Should Be Peace</em>,
+              <em>Adulting is a Scam : and how to win it anyway</em>,
+              <em>Oros</em>, <em>Scriptophobia</em> and
+              <em>A silent junction</em>.
             </p>
 
-            <p class="about-small">
-              Based in Alipurduar, West Bengal, India.
+            <p>
+              Writing has always been an exploration of ideas, stories and
+              perspectives rather than a single fixed genre.
             </p>
 
           </div>
 
         </div>
 
-      </section>
+      </div>
+    </section>
 
+    <!-- BOOKS -->
+    <section id="books">
+      <div class="container">
 
-      <!-- BOOKS -->
-      <section id="books">
+        <div class="section-heading">Books</div>
 
-        <div class="section-label">02 — Selected Books</div>
+        <div class="books-grid">
 
-        <h2 class="section-heading">
-          Published<br>work.
-        </h2>
-
-
-        <div class="books">
-
-
-          <article class="book">
-
+          <article class="book-card">
             <div>
-
-              <div class="book-number">
-                01 · 2026
-              </div>
-
-              <h3>
-                Zero Balance
-              </h3>
-
-              <p>
-                English · Amazon KDP
-              </p>
-
+              <div class="book-number">01 · 2026</div>
+              <h3>Zero Balance</h3>
+              <div class="book-meta">English · Amazon KDP</div>
             </div>
 
             <a
@@ -526,30 +600,18 @@
               href="https://amzn.in/d/05g9okOJ"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View Zero Balance by Aabir Goon on Amazon"
+              aria-label="Buy Zero Balance by Aabir Goon on Amazon"
             >
               View on Amazon →
             </a>
-
           </article>
 
 
-          <article class="book">
-
+          <article class="book-card">
             <div>
-
-              <div class="book-number">
-                02 · 2026
-              </div>
-
-              <h3>
-                There Should Be Peace
-              </h3>
-
-              <p>
-                English · Amazon KDP
-              </p>
-
+              <div class="book-number">02 · 2026</div>
+              <h3>There Should Be Peace</h3>
+              <div class="book-meta">English · Amazon KDP</div>
             </div>
 
             <a
@@ -557,30 +619,18 @@
               href="https://amzn.in/d/0fePBHmR"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View There Should Be Peace by Aabir Goon on Amazon"
+              aria-label="Buy There Should Be Peace by Aabir Goon on Amazon"
             >
               View on Amazon →
             </a>
-
           </article>
 
 
-          <article class="book">
-
+          <article class="book-card">
             <div>
-
-              <div class="book-number">
-                03 · 2026
-              </div>
-
-              <h3>
-                Adulting Is a Scam: And How to Win It Anyway
-              </h3>
-
-              <p>
-                English · Amazon KDP
-              </p>
-
+              <div class="book-number">03 · 2026</div>
+              <h3>Adulting is a Scam : and how to win it anyway</h3>
+              <div class="book-meta">English · Amazon KDP</div>
             </div>
 
             <a
@@ -588,30 +638,18 @@
               href="https://amzn.in/d/047CKD7m"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View Adulting Is a Scam by Aabir Goon on Amazon"
+              aria-label="Buy Adulting is a Scam by Aabir Goon on Amazon"
             >
               View on Amazon →
             </a>
-
           </article>
 
 
-          <article class="book">
-
+          <article class="book-card">
             <div>
-
-              <div class="book-number">
-                04 · 2026
-              </div>
-
-              <h3>
-                Oros
-              </h3>
-
-              <p>
-                English · Amazon KDP
-              </p>
-
+              <div class="book-number">04 · 2026</div>
+              <h3>Oros</h3>
+              <div class="book-meta">English · Amazon KDP</div>
             </div>
 
             <a
@@ -619,30 +657,18 @@
               href="https://amzn.in/d/0aucmFAfO"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View Oros by Aabir Goon on Amazon"
+              aria-label="Buy Oros by Aabir Goon on Amazon"
             >
               View on Amazon →
             </a>
-
           </article>
 
 
-          <article class="book">
-
+          <article class="book-card">
             <div>
-
-              <div class="book-number">
-                05 · 2026
-              </div>
-
-              <h3>
-                Scriptophobia
-              </h3>
-
-              <p>
-                English · Amazon KDP
-              </p>
-
+              <div class="book-number">05 · 2026</div>
+              <h3>Scriptophobia</h3>
+              <div class="book-meta">English · Amazon KDP</div>
             </div>
 
             <a
@@ -650,148 +676,73 @@
               href="https://amzn.in/d/01KPVAou"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="View Scriptophobia by Aabir Goon on Amazon"
+              aria-label="Buy Scriptophobia by Aabir Goon on Amazon"
             >
               View on Amazon →
             </a>
-
           </article>
 
 
-          <article class="book">
-
+          <article class="book-card">
             <div>
-
-              <div class="book-number">
-                06 · 2026
-              </div>
-
-              <h3>
-                A Silent Junction
-              </h3>
-
-              <p>
-                English · Amazon KDP · Currently unavailable
-              </p>
-
+              <div class="book-number">06 · 2026</div>
+              <h3>A silent junction</h3>
+              <div class="book-meta">English · Amazon KDP</div>
             </div>
 
+            <span class="book-link">Currently unavailable</span>
           </article>
 
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STORIES -->
+    <section id="stories">
+      <div class="container">
+
+        <div class="section-heading">Stories</div>
+
+        <div class="stories-box">
+
+          <h3>
+            Stories that stay<br>
+            after the page ends.
+          </h3>
+
+          <p>
+            From psychological unease and mystery to horror, fantasy and
+            thriller, Aabir Goon's stories explore uncertainty, strange
+            circumstances and the less obvious corners of human experience.
+          </p>
 
         </div>
 
-      </section>
+      </div>
+    </section>
 
+    <!-- CONNECT -->
+    <section id="connect">
+      <div class="container">
 
-      <!-- OTHER STORIES -->
-      <section id="stories">
-
-        <div class="section-label">
-          03 — Beyond the Books
-        </div>
-
-        <div class="about-grid">
-
-          <div>
-
-            <h2 class="section-heading">
-              Other<br>stories.
-            </h2>
-
-          </div>
-
-
-          <div>
-
-            <p class="about-text">
-              Beyond his published books, Aabir has written stories
-              across Bengali, English and Hindi.
-            </p>
-
-            <p class="about-small">
-              His independent writing explores psychological,
-              horror, mystery, fantasy and thriller themes.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      <!-- AUDIO STORIES -->
-      <section id="audio" class="audio">
-
-        <div class="section-label">
-          04 — Bengali Audio Stories
-        </div>
-
-        <h2 class="section-heading">
-          Manushder<br>Golpo.
-        </h2>
-
-        <p>
-          Bengali stories, atmosphere and narration.
-          Manushder Golpo is Aabir's Bengali audio-storytelling channel.
-        </p>
-
-        <div class="buttons">
-
-          <a
-            class="button primary"
-            href="https://youtube.com/@manushdergolpo"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Listen to Manushder Golpo on YouTube"
-          >
-            Listen on YouTube →
-          </a>
-
-        </div>
-
-      </section>
-
-
-      <!-- CONNECT -->
-      <section id="connect">
-
-        <div class="section-label">
-          05 — Connect
-        </div>
+        <div class="section-heading">Connect</div>
 
         <div class="connect-grid">
 
+          <div class="connect-card">
+            <h3>Email</h3>
+            <p>For enquiries and conversations.</p>
 
-          <div>
-
-            <h2 class="section-heading">
-              Say<br>hello.
-            </h2>
-
-            <a
-              class="contact-email"
-              href="mailto:techaabir@gmail.com"
-              aria-label="Email Aabir Goon"
-            >
+            <a href="mailto:techaabir@gmail.com">
               techaabir@gmail.com
             </a>
-
           </div>
 
 
-          <div class="socials">
-
-            <a
-              href="https://youtube.com/@manushdergolpo"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Aabir Goon on YouTube"
-            >
-              YouTube ↗
-            </a>
-
+          <div class="connect-card">
+            <h3>Instagram</h3>
+            <p>Follow Aabir Goon on Instagram.</p>
 
             <a
               href="https://www.instagram.com/aabir.goon/"
@@ -799,9 +750,14 @@
               rel="noopener noreferrer"
               aria-label="Aabir Goon on Instagram"
             >
-              Instagram ↗
+              @aabir.goon →
             </a>
+          </div>
 
+
+          <div class="connect-card">
+            <h3>Facebook</h3>
+            <p>Connect with Aabir Goon on Facebook.</p>
 
             <a
               href="https://www.facebook.com/share/1GK5wFMWMz/"
@@ -809,23 +765,27 @@
               rel="noopener noreferrer"
               aria-label="Aabir Goon on Facebook"
             >
-              Facebook ↗
+              Facebook profile →
             </a>
-
           </div>
 
         </div>
 
-      </section>
+      </div>
+    </section>
 
-    </main>
+  </main>
 
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
 
-    <footer>
-      © 2026 Aabir Goon. All rights reserved.
-    </footer>
+      <span>© 2026 Aabir Goon</span>
 
-  </div>
+      <span>Author &amp; Fiction Writer</span>
+
+    </div>
+  </footer>
 
 </body>
-  </html>
+</html>
