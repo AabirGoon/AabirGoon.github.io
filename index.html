@@ -59,6 +59,7 @@
   </script>
 
   <style>
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -91,7 +92,10 @@
       margin: auto;
     }
 
-    /* NAVIGATION */
+
+    /* =========================
+       NAVIGATION
+    ========================= */
 
     nav {
       position: sticky;
@@ -133,7 +137,10 @@
       color: #ffffff;
     }
 
-    /* HERO */
+
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
       min-height: 88vh;
@@ -205,8 +212,15 @@
       opacity: 0.85;
     }
 
+
+    /* =========================
+       PORTRAIT
+       FULL IMAGE — NO CROPPING
+    ========================= */
+
     .portrait-wrap {
       position: relative;
+      width: 100%;
     }
 
     .portrait-wrap::before {
@@ -214,17 +228,24 @@
       position: absolute;
       inset: -18px 18px 18px -18px;
       border: 1px solid #3b3834;
-      z-index: -1;
+      z-index: 0;
+      pointer-events: none;
     }
 
     .portrait {
+      position: relative;
+      z-index: 1;
       width: 100%;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
+      height: auto;
+      display: block;
+      object-fit: contain;
       filter: saturate(0.85);
     }
 
-    /* SECTIONS */
+
+    /* =========================
+       SECTIONS
+    ========================= */
 
     section {
       padding: 100px 0;
@@ -239,6 +260,11 @@
       color: #a99d8d;
       margin-bottom: 45px;
     }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
 
     .about-grid {
       display: grid;
@@ -261,7 +287,10 @@
       margin-top: 20px;
     }
 
-    /* BOOKS */
+
+    /* =========================
+       BOOKS
+    ========================= */
 
     .books-grid {
       display: grid;
@@ -314,7 +343,10 @@
       color: #ded8cf;
     }
 
-    /* STORIES */
+
+    /* =========================
+       STORIES
+    ========================= */
 
     .stories-box {
       border: 1px solid #2e2e2e;
@@ -335,7 +367,10 @@
       font-size: 17px;
     }
 
-    /* CONNECT */
+
+    /* =========================
+       CONNECT
+    ========================= */
 
     .connect-grid {
       display: grid;
@@ -369,7 +404,10 @@
       word-break: break-word;
     }
 
-    /* FOOTER */
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
       border-top: 1px solid #242424;
@@ -386,7 +424,10 @@
       flex-wrap: wrap;
     }
 
-    /* RESPONSIVE */
+
+    /* =========================
+       TABLET / MOBILE
+    ========================= */
 
     @media (max-width: 800px) {
 
@@ -420,6 +461,13 @@
 
       .portrait-wrap {
         max-width: 520px;
+        margin: 0 auto;
+      }
+
+      .portrait {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
       }
 
       .about-grid {
@@ -443,6 +491,11 @@
         padding: 75px 0;
       }
     }
+
+
+    /* =========================
+       SMALL PHONES
+    ========================= */
 
     @media (max-width: 480px) {
 
@@ -476,16 +529,32 @@
       .stories-box {
         padding: 25px;
       }
+
+      .portrait-wrap {
+        max-width: 100%;
+      }
+
+      .portrait-wrap::before {
+        inset: -10px 10px 10px -10px;
+      }
     }
+
   </style>
 </head>
 
+
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- =========================
+       NAVIGATION
+  ========================= -->
+
   <nav>
     <div class="container nav-inner">
-      <a href="#top" class="logo">AABIR GOON</a>
+
+      <a href="#top" class="logo">
+        AABIR GOON
+      </a>
 
       <div class="nav-links">
         <a href="#about">About</a>
@@ -493,18 +562,29 @@
         <a href="#stories">Stories</a>
         <a href="#connect">Contact</a>
       </div>
+
     </div>
   </nav>
 
+
   <main id="top">
 
-    <!-- HERO -->
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
     <header class="container hero">
 
       <div>
-        <div class="eyebrow">AUTHOR · FICTION WRITER</div>
 
-        <h1>Aabir Goon.</h1>
+        <div class="eyebrow">
+          AUTHOR · FICTION WRITER
+        </div>
+
+        <h1>
+          Aabir Goon.
+        </h1>
 
         <h2>
           Stories from the psychological, mysterious and unsettling sides of being human.
@@ -516,29 +596,47 @@
         </p>
 
         <div class="hero-buttons">
-          <a href="#books" class="button primary">Explore the books</a>
-          <a href="#about" class="button">About Aabir</a>
+
+          <a href="#books" class="button primary">
+            Explore the books
+          </a>
+
+          <a href="#about" class="button">
+            About Aabir
+          </a>
+
         </div>
+
       </div>
 
+
+      <!-- FULL PORTRAIT -->
+
       <div class="portrait-wrap">
+
         <img
           src="aabir-goon.jpg"
           alt="Aabir Goon — Author and Fiction Writer"
           class="portrait"
-          width="800"
-          height="1000"
           fetchpriority="high"
         >
+
       </div>
 
     </header>
 
-    <!-- ABOUT -->
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
     <section id="about">
+
       <div class="container">
 
-        <div class="section-heading">About the author</div>
+        <div class="section-heading">
+          About the author
+        </div>
 
         <div class="about-grid">
 
@@ -546,6 +644,7 @@
             Fiction, curiosity<br>
             &amp; the human mind.
           </h2>
+
 
           <div class="about-text">
 
@@ -578,21 +677,44 @@
         </div>
 
       </div>
+
     </section>
 
-    <!-- BOOKS -->
+
+    <!-- =========================
+         BOOKS
+    ========================= -->
+
     <section id="books">
+
       <div class="container">
 
-        <div class="section-heading">Books</div>
+        <div class="section-heading">
+          Books
+        </div>
+
 
         <div class="books-grid">
 
+
+          <!-- BOOK 01 -->
+
           <article class="book-card">
+
             <div>
-              <div class="book-number">01 · 2026</div>
-              <h3>Zero Balance</h3>
-              <div class="book-meta">English · Amazon KDP</div>
+
+              <div class="book-number">
+                01 · 2026
+              </div>
+
+              <h3>
+                Zero Balance
+              </h3>
+
+              <div class="book-meta">
+                English · Amazon KDP
+              </div>
+
             </div>
 
             <a
@@ -604,14 +726,28 @@
             >
               View on Amazon →
             </a>
+
           </article>
 
 
+          <!-- BOOK 02 -->
+
           <article class="book-card">
+
             <div>
-              <div class="book-number">02 · 2026</div>
-              <h3>There Should Be Peace</h3>
-              <div class="book-meta">English · Amazon KDP</div>
+
+              <div class="book-number">
+                02 · 2026
+              </div>
+
+              <h3>
+                There Should Be Peace
+              </h3>
+
+              <div class="book-meta">
+                English · Amazon KDP
+              </div>
+
             </div>
 
             <a
@@ -623,14 +759,28 @@
             >
               View on Amazon →
             </a>
+
           </article>
 
 
+          <!-- BOOK 03 -->
+
           <article class="book-card">
+
             <div>
-              <div class="book-number">03 · 2026</div>
-              <h3>Adulting is a Scam : and how to win it anyway</h3>
-              <div class="book-meta">English · Amazon KDP</div>
+
+              <div class="book-number">
+                03 · 2026
+              </div>
+
+              <h3>
+                Adulting is a Scam : and how to win it anyway
+              </h3>
+
+              <div class="book-meta">
+                English · Amazon KDP
+              </div>
+
             </div>
 
             <a
@@ -642,14 +792,28 @@
             >
               View on Amazon →
             </a>
+
           </article>
 
 
+          <!-- BOOK 04 -->
+
           <article class="book-card">
+
             <div>
-              <div class="book-number">04 · 2026</div>
-              <h3>Oros</h3>
-              <div class="book-meta">English · Amazon KDP</div>
+
+              <div class="book-number">
+                04 · 2026
+              </div>
+
+              <h3>
+                Oros
+              </h3>
+
+              <div class="book-meta">
+                English · Amazon KDP
+              </div>
+
             </div>
 
             <a
@@ -661,14 +825,28 @@
             >
               View on Amazon →
             </a>
+
           </article>
 
 
+          <!-- BOOK 05 -->
+
           <article class="book-card">
+
             <div>
-              <div class="book-number">05 · 2026</div>
-              <h3>Scriptophobia</h3>
-              <div class="book-meta">English · Amazon KDP</div>
+
+              <div class="book-number">
+                05 · 2026
+              </div>
+
+              <h3>
+                Scriptophobia
+              </h3>
+
+              <div class="book-meta">
+                English · Amazon KDP
+              </div>
+
             </div>
 
             <a
@@ -680,29 +858,56 @@
             >
               View on Amazon →
             </a>
+
           </article>
 
+
+          <!-- BOOK 06 -->
 
           <article class="book-card">
+
             <div>
-              <div class="book-number">06 · 2026</div>
-              <h3>A silent junction</h3>
-              <div class="book-meta">English · Amazon KDP</div>
+
+              <div class="book-number">
+                06 · 2026
+              </div>
+
+              <h3>
+                A silent junction
+              </h3>
+
+              <div class="book-meta">
+                English · Amazon KDP
+              </div>
+
             </div>
 
-            <span class="book-link">Currently unavailable</span>
+            <span class="book-link">
+              Currently unavailable
+            </span>
+
           </article>
+
 
         </div>
 
       </div>
+
     </section>
 
-    <!-- STORIES -->
+
+    <!-- =========================
+         STORIES
+    ========================= -->
+
     <section id="stories">
+
       <div class="container">
 
-        <div class="section-heading">Stories</div>
+        <div class="section-heading">
+          Stories
+        </div>
+
 
         <div class="stories-box">
 
@@ -720,29 +925,56 @@
         </div>
 
       </div>
+
     </section>
 
-    <!-- CONNECT -->
+
+    <!-- =========================
+         CONNECT
+    ========================= -->
+
     <section id="connect">
+
       <div class="container">
 
-        <div class="section-heading">Connect</div>
+        <div class="section-heading">
+          Connect
+        </div>
+
 
         <div class="connect-grid">
 
+
+          <!-- EMAIL -->
+
           <div class="connect-card">
-            <h3>Email</h3>
-            <p>For enquiries and conversations.</p>
+
+            <h3>
+              Email
+            </h3>
+
+            <p>
+              For enquiries and conversations.
+            </p>
 
             <a href="mailto:techaabir@gmail.com">
               techaabir@gmail.com
             </a>
+
           </div>
 
 
+          <!-- INSTAGRAM -->
+
           <div class="connect-card">
-            <h3>Instagram</h3>
-            <p>Follow Aabir Goon on Instagram.</p>
+
+            <h3>
+              Instagram
+            </h3>
+
+            <p>
+              Follow Aabir Goon on Instagram.
+            </p>
 
             <a
               href="https://www.instagram.com/aabir.goon/"
@@ -752,40 +984,10 @@
             >
               @aabir.goon →
             </a>
+
           </div>
 
 
-          <div class="connect-card">
-            <h3>Facebook</h3>
-            <p>Connect with Aabir Goon on Facebook.</p>
+          <!-- FACEBOOK -->
 
-            <a
-              href="https://www.facebook.com/share/1GK5wFMWMz/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Aabir Goon on Facebook"
-            >
-              Facebook profile →
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container footer-inner">
-
-      <span>© 2026 Aabir Goon</span>
-
-      <span>Author &amp; Fiction Writer</span>
-
-    </div>
-  </footer>
-
-</body>
-</html>
+          <div class="connect-card"
